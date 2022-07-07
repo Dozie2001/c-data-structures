@@ -14,12 +14,12 @@ int _isupper(int c)
 	{
 		if (i == c)
 		{
-			value = 0;
+			value = 1;
 			break;
 		}
 		else
 		{
-			value = 1;
+			value = 0;
 			break;
 		}
 	}
