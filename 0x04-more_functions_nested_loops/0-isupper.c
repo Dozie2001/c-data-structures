@@ -8,18 +8,13 @@
 int _isupper(int c)
 {
 	int i;
-	int value;
+	int value = 0;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (i == c)
 		{
 			value = 1;
-			break;
-		}
-		else
-		{
-			value = 0;
 			break;
 		}
 	}
