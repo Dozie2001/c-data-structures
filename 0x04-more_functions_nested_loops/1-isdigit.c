@@ -6,11 +6,14 @@
  */
 int _isdigit(int c)
 {
-	int i;
+	char i;
+	int value = 0;
 
-	for (i = 0; i <= 9; i++)
+	for (i = '0'; i <= '9'; i++)
 		if (i == c)
-			return (1);
-		else
-			return (0);
+		{
+			value = 1;
+			break;
+		}
+	return (value);
 }
