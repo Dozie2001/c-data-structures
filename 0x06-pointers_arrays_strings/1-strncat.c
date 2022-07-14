@@ -10,19 +10,20 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int len = 0, i = 0;
-	char *temp = dest, *start = src;
+	char *temp = dest;
+	char *start = src;
 
 	while (*src)
 	{
 		len++;
-		src;
+		src++;
 	}
 
 	while (*dest)
 		dest++;
 
-	if (n > srclen)
-		n = srclen;
+	if (n > len)
+		n = len;
 
 	src = start;
 
