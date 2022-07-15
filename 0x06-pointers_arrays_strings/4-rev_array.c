@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * reverse_array - a function that reverse an array
- * @: an input array
+ * @a: an input array
  * @n: number of array
  * Return: Nothing
  */
