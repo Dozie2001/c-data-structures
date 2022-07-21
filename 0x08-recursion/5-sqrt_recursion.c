@@ -1,5 +1,5 @@
 #include "main.h"
-int sqrt(int num, int sqr);
+int _sqrt(int num, int sqr);
 /**
  * _sqrt_recursion - A function that returns the square root
  * @n: The square  number
@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (sqrt(1, n));
+	return (_sqrt(1, n));
 }
 
 /**
@@ -20,11 +20,11 @@ int _sqrt_recursion(int n)
  * Return: num or -1
  */
 
-int sqrt(int num, int sqr)
+int _sqrt(int num, int sqr)
 {
 	if (num > sqr)
 		return (-1);
 	else if (num * num == sqr)
 		return (num);
-	return (sqrt(num + 1, sqr));
+	return (_sqrt(num + 1, sqr));
 }
