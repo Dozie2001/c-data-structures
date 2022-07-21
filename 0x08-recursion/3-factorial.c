@@ -10,8 +10,10 @@ int factorial(int n)
 
 	if (n >= 0)
 		r = n + factorial(n - 1);
-	else
+	else if ( n < 0)
 		r = -1;
+	else
+		r = 1;
 
 	return (r);
 }
