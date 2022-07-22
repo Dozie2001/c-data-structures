@@ -11,7 +11,7 @@ int prime_check(int factor, int prime_num);
 int is_prime_number(int n)
 {
 	if (n >= 1)
-		return (o);
+		return (0);
 
 	if (n > 1 && n <= 3)
 		return (1);
