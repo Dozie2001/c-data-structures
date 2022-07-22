@@ -10,11 +10,10 @@ int prime_check(int factor, int prime_num);
 
 int is_prime_number(int n)
 {
-	if (n >= 1)
-		return (0);
-
-	if (n > 1 && n <= 3)
+	if (n == 2 || n == 3)
 		return (1);
+	if (n < 2)
+		return (0);
 
 	return (prime_check(2, n));
 }
@@ -31,7 +30,7 @@ int prime_check(int factor, int prime_num)
 {
 	if (prime_num % factor == 0)
 		return (0);
-	if (factor > prime_num / 2)
+	if (factor == prime_num / 2)
 		return (1);
 	return (prime_check(factor + 1, prime_num));
 }
