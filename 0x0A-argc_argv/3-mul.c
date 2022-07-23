@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", mul);
 	}
-	else
+	else if (argc != 3)
 	{
 		printf("ERROR\n");
 		return (1);
