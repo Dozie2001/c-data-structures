@@ -15,19 +15,14 @@ char *str_concat(char *s1, char *s2)
 		s1 = " ";
 	str1 = s1;
 	str2 = s2;
-	while (*s1)
-	{
+	while (s1[l1])
 		l1++;
-		s1++;
-	}
 	s1 = str1;
 	if (s2 == NULL)
 		s2 = " ";
-	while (*s2)
-	{
+	while (s2[l2])
 		l2++;
-		s2++;
-	}
+
 	s2 = str2;
 	counter_sum = l1 + l2 + 1;
 	new = malloc(sizeof(char) * counter_sum);
