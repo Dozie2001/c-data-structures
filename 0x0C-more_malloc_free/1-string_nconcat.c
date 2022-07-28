@@ -7,7 +7,7 @@
  * @s2: Pointer
  * @n: Unsigned int n
  *
- * Return:
+ * Return:a pointer or NULL if fail
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			s1++;
 		}
 
-		else 
+		else
 		{
 			new[i] = *s2;
 			s2++;
