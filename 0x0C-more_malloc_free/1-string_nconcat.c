@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s2[len1])
+	while (s2[len2])
 		len2++;
 	if (n >= len2)
 		n = len2;
@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (; i < (len1 + n); i++)
 	{
-		if (len1 < i)
+		if (i < len1)
 		{
 			new[i] = *s1;
 			s1++;
