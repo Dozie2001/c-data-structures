@@ -2,6 +2,7 @@
 #include <string.h>
 
 /**
+ * add_node_end - A function that adds a node to the end of linked list
  * @head: pointer to a list_t pointer that points to the head struct
  * @str: string to add as node
  * Return: pointer to new element of list, NULL on failure
@@ -25,13 +26,13 @@ list_t *add_node_end(list_t **head, const char *str)
 		new_node->next = *head;
 		*head = new_node;
 	}
-										else
-										{
-											new_node->next = NULL;
-											temp = *head;
-											while (temp->next)
-												temp = temp->next;
-											temp->next = new_node;
-										}
-										return (new_node);
+	else
+	{
+		new_node->next = NULL;
+		temp = *head;
+		while (temp->next)
+			temp = temp->next;
+		temp->next = new_node;
+	}
+	return (new_node);
 }
