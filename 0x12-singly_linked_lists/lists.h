@@ -3,15 +3,15 @@
 #include <stdlib.h>
 
 /**
- * struct lsit_s - singly linked list
+ * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: Length of the string
  * @next: points to the next node
  *
  * Description: singly list node structure
- * for ALX 
+ * for ALX
  */
- typedef struct list_s
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
