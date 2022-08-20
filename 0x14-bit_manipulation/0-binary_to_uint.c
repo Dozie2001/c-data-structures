@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - A fiction that converts binary number
+ * binary_to_uint - A fiction that converts binary number
  * to an unsigned intger
  * @b: A pointer to binary string
  * Return: unsigned intger converted number
